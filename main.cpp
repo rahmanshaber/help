@@ -1,5 +1,5 @@
 /*
-Help app for CoreApps related help documents
+Help app for CoreApps related help
 
 Help is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License

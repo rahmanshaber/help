@@ -1,5 +1,5 @@
 # Help
-An app of CoreApps family.Help app for CoreApps related help documents.
+An app of CoreApps family.Help app for CoreApps related help.
 
 <img src="Help.png" width="500">
 

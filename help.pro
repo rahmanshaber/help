@@ -12,7 +12,6 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
-CONFIG += silent warn_on
 
 # library for theme
 unix:!macx: LIBS += /usr/lib/libcprime.a
@@ -30,9 +29,44 @@ FORMS += \
 RESOURCES += \
     icons.qrc
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+# Disable warnings and enable threading support
+CONFIG += thread silent build_all
 
+# Disable Debug on Release
+# CONFIG(release):DEFINES += QT_NO_DEBUG_OUTPUT
+
+# Build location
+
+BUILD_PREFIX = $$(CA_BUILD_DIR)
+
+isEmpty( BUILD_PREFIX ) {
+        BUILD_PREFIX = ./build
+}
+
+MOC_DIR       = $$BUILD_PREFIX/moc-qt5
+OBJECTS_DIR   = $$BUILD_PREFIX/obj-qt5
+RCC_DIR	      = $$BUILD_PREFIX/qrc-qt5
+UI_DIR        = $$BUILD_PREFIX/uic-qt5
+
+
+unix {
+        isEmpty(PREFIX) {
+                PREFIX = /usr
+        }
+        BINDIR = $$PREFIX/bin
+
+        target.path = $$BINDIR
+
+#        QMAKE_RPATHDIR += $$PREFIX/lib/coreApps/
+
+        desktop.path = $$PREFIX/share/applications/
+        desktop.files = ../help.desktop
+
+        icons.path = $$PREFIX/share/coreapps/
+        icons.files = ./icons/Help.svg
+
+        INSTALLS += target icons desktop
+}
+
+DEFINES += "HAVE_POSIX_OPENPT"
 
