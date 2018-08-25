@@ -23,7 +23,7 @@ help::help(QWidget *parent) :QWidget(parent),ui(new Ui::help)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(":/appStyle/style/Help.qss"));
+    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::HelpStyle));
 
     // set window size
     int x = static_cast<int>(Utilities::screensize().width()  * .8);
