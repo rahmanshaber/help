@@ -9,10 +9,6 @@ QT       += core gui widgets
 TARGET = help
 TEMPLATE = app
 
-DEFINES += QT_DEPRECATED_WARNINGS
-
-CONFIG += c++11
-
 # library for theme
 unix:!macx: LIBS += /usr/lib/libcprime.a
 
@@ -29,8 +25,8 @@ FORMS += \
 RESOURCES += \
     icons.qrc
 
-# Disable warnings and enable threading support
-CONFIG += thread silent build_all
+# Disable warnings, enable threading support and c++11 
+CONFIG += thread silent build_all c++11
 
 # Disable Debug on Release
 # CONFIG(release):DEFINES += QT_NO_DEBUG_OUTPUT
@@ -66,5 +62,6 @@ unix {
         INSTALLS += target icons desktop
 }
 
+DEFINES += QT_DEPRECATED_WARNINGS
 DEFINES += "HAVE_POSIX_OPENPT"
 
