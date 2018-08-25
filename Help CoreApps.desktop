@@ -2,8 +2,8 @@
 Name=Help CoreApps
 Comment=Help app for CoreApps related help
 Exec=help
-Icon=/usr/share/icons/CoreBox/Help.svg
+Icon=/usr/share/icons/CoreApps/Help.svg
 Type=Application
-Categories=Qt;System;Utility;Core;
+Categories=Utility;Core;Qt;Documentation;
 Terminal=false
 StartupNotify=true

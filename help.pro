@@ -57,13 +57,11 @@ unix {
 
         target.path = $$BINDIR
 
-#        QMAKE_RPATHDIR += $$PREFIX/lib/coreApps/
-
         desktop.path = $$PREFIX/share/applications/
-        desktop.files = ../help.desktop
+        desktop.files = "Help CoreApps.desktop"
 
-        icons.path = $$PREFIX/share/coreapps/
-        icons.files = ./icons/Help.svg
+        icons.path = $$PREFIX/share/icons/CoreApps/
+        icons.files = icons/Help.svg
 
         INSTALLS += target icons desktop
 }
