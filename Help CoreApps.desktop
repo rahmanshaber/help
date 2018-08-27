@@ -2,7 +2,7 @@
 Name=Help CoreApps
 Comment=Help app for CoreApps related help
 Exec=help
-Icon=/usr/share/icons/CoreApps/Help.svg
+Icon=/usr/share/coreapps/icons/Help.svg
 Type=Application
 Categories=Utility;Core;Qt;Documentation;
 Terminal=false
