@@ -44,6 +44,7 @@ void help::pageClick(QPushButton *btn, int i, QString title)
     btn->setChecked(true);
     ui->selectedsection->setText(title);
     ui->pages->setCurrentIndex(i);
+    this->setWindowTitle(title + " - Help");
 }
 
 void help::on_search_clicked()
@@ -76,9 +77,9 @@ void help::on_coretime_clicked()
     pageClick(ui->coretime,6, tr("CoreTime"));
 }
 
-void help::on_corescrshot_clicked()
+void help::on_coreshot_clicked()
 {
-    pageClick(ui->corescrshot,5, tr("CoreScreenShot"));
+    pageClick(ui->coreshot,5, tr("CoreShot"));
 }
 
 void help::on_corepaint_clicked()

@@ -267,7 +267,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="corescrshot">
+       <widget class="QPushButton" name="coreshot">
         <property name="font">
          <font>
           <pointsize>11</pointsize>
@@ -277,7 +277,7 @@
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="text">
-         <string>CoreScreenShot</string>
+         <string>CoreShot</string>
         </property>
         <property name="iconSize">
          <size>

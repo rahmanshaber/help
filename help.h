@@ -45,7 +45,7 @@ private slots:
     void on_coreplayer_clicked();
     void on_corerenamer_clicked();
     void on_coretime_clicked();
-    void on_corescrshot_clicked();
+    void on_coreshot_clicked();
     void on_corepaint_clicked();
     void on_coreimage_clicked();
     void on_corepad_clicked();
