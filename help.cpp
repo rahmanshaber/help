@@ -29,6 +29,8 @@ help::help(QWidget *parent) :QWidget(parent),ui(new Ui::help)
     int x = static_cast<int>(Utilities::screensize().width()  * .8);
     int y = static_cast<int>(Utilities::screensize().height()  * .7);
     this->resize(x, y);
+
+    on_corebox_clicked();
 }
 
 help::~help()

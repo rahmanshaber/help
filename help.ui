@@ -1108,7 +1108,7 @@ p, li { white-space: pre-wrap; }
          </font>
         </property>
         <property name="text">
-         <string>HelpUs</string>
+         <string>CoreBox</string>
         </property>
        </widget>
       </item>
