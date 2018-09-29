@@ -1,7 +1,7 @@
 # Help
 An app of CoreApps family.Help app for CoreApps related help.
 
-<img src="Help.png" width="500">
+<img src="help.png" width="500">
 
 ### Download
 

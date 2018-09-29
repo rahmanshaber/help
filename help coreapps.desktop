@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Help CoreApps
+Comment=Help app for CoreApps related help
+Exec=help
+Icon=/usr/share/coreapps/icons/help.svg
+Type=Application
+Categories=Utility;Core;Qt;Documentation;
+Terminal=false
+StartupNotify=true
