@@ -23,14 +23,14 @@ help::help(QWidget *parent) :QWidget(parent),ui(new Ui::help)
     ui->setupUi(this);
 
     // set stylesheet from style.qrc
-    setStyleSheet(Utilities::getStylesheetFileContent(Utilities::StyleAppName::HelpStyle));
+    setStyleSheet(CPrime::ThemeFunc::getStyleSheetFileContent(CPrime::StyleTypeName::HelpStyle));
 
     // set window size
-    int x = static_cast<int>(Utilities::screensize().width()  * .8);
-    int y = static_cast<int>(Utilities::screensize().height()  * .7);
+    int x = static_cast<int>(CPrime::InfoFunc::screenSize().width()  * .8);
+    int y = static_cast<int>(CPrime::InfoFunc::screenSize().height()  * .7);
     this->resize(x, y);
 
-    on_corebox_clicked();
+    on_coreapps_clicked();
 }
 
 help::~help()
@@ -104,7 +104,7 @@ void help::on_corefm_clicked()
     pageClick(ui->corefm,1, tr("CoreFM"));
 }
 
-void help::on_corebox_clicked()
+void help::on_coreapps_clicked()
 {
-    pageClick(ui->corebox,0, tr("CoreBox"));
+    pageClick(ui->coreapps,0, tr("CoreApps"));
 }

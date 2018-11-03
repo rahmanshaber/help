@@ -22,7 +22,7 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QTextStream>
 #include <QFile>
 
-#include <cprime/utilities.h>
+#include <cprime/themefunc.h>
 
 
 namespace Ui {
@@ -50,7 +50,7 @@ private slots:
     void on_coreimage_clicked();
     void on_corepad_clicked();
     void on_corefm_clicked();
-    void on_corebox_clicked();
+    void on_coreapps_clicked();
 
 private:
     Ui::help *ui;

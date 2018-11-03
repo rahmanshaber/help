@@ -20,7 +20,6 @@ along with this program; if not, see {http://www.gnu.org/licenses/}. */
 #include <QFont>
 #include <QStyleFactory>
 
-#include <cprime/utilities.h>
 #include <cprime/settingsmanage.h>
 
 
